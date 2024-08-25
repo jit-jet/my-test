@@ -1,0 +1,18 @@
+import React from 'react'
+import ClientEnv from './ClientEnv'
+
+export default function page() {
+  return (
+    <div className='m-6'>
+        <h1>Environment Variables in server side</h1>
+        <p>
+            simple env :{process.env.SIMPLE_ENV}
+        </p>
+        <p>
+        NEXT_PUBLIC : {process.env.NEXT_PUBLIC_SIMPLE_ENV}
+        </p>
+<hr/>
+        <ClientEnv />
+    </div>
+  )
+}
